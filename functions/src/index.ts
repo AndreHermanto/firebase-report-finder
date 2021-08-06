@@ -44,4 +44,10 @@ main.use('/',app);
 main.use(bodyParser.json());
 main.use(bodyParser.urlencoded({extended: false}));
 
-export const reportFinder=functions.region('australia-southeast1').https.onRequest(main);
+export const reportFinder=functions
+                            .runWith({
+                              timeoutSeconds: 10,
+                              memory: '128MB',
+                              maxInstances: 3
+                            })
+                            .region('australia-southeast1').https.onRequest(main);
