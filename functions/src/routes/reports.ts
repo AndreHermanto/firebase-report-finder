@@ -18,7 +18,18 @@ function authenticateToken(req: any, res: any, next: any) {
 	})
   }
 
-/* GET home page. */
+/**
+ * @api {get} /reports/:id Request User information
+ * @apiName GetReport
+ * @apiGroup Report
+ * @apiError NotFound The <code>404</code> of the Report was not found.
+ * @apiError Forbidden The <code>403</code> of the token was not valid.
+ * 
+ * @apiHeader (Header) {String} Authorization Authorization value.
+ *
+ * @apiSuccess {HTML} HTML HTML report
+ * 
+ */
 router.get('/:report', authenticateToken, function(req: any, res: any, next: any) {
     var staticFilesPath = path.join(__dirname, '../nonTS/reports')
     res.sendFile(`${staticFilesPath}/${req.params.report}.report.html`)

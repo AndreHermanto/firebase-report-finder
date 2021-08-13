@@ -15,7 +15,21 @@ var path = require('path');
 const app=express();
 const main=express();
 
-app.use(cors())
+var whitelist = ['http://localhost:3000',
+                  'https://pharmcat-report-finder.web.app'
+              ]
+
+var corsOptions = {
+  origin: function (origin:any, callback:any) {
+    if (typeof origin === 'undefined' || whitelist.indexOf(origin) !== -1) {
+      callback(null, true)
+    } else {
+      callback(new Error('Not allowed by CORS'))
+    }
+  }
+}
+
+app.use(cors(corsOptions))
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

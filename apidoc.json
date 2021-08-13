@@ -1,0 +1,7 @@
+{
+"name": "Singleton App",
+"version": "0.1.0",
+"description": "Singleton App API",
+"title": "API list",
+"sampleUrl" : "https://australia-southeast1-pharmcat-report-finder.cloudfunctions.net/reportFinder"
+}
