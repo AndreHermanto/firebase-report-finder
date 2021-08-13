@@ -3,7 +3,12 @@ import * as admin from 'firebase-admin';
 import * as express from 'express';
 import * as bodyParser from 'body-parser';
 
-admin.initializeApp(functions.config().firebase);
+const serviceAccount = require('./nonTS/keys/key.json');
+
+admin.initializeApp({
+  credential: admin.credential.cert(serviceAccount),
+  storageBucket: 'pharmcat-report-finder.appspot.com'
+});
 
 var createError = require('http-errors');
 

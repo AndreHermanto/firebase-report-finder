@@ -5,7 +5,7 @@ var router = express.Router();
 import * as jwt from 'jsonwebtoken';
 var fs = require('fs');
 
-var cert = fs.readFileSync(__dirname + '/../nonTS/singleton-app.pem');
+var cert = fs.readFileSync(__dirname + '/../nonTS/keys/singleton-app.pem');
 
 function authenticateToken(req: any, res: any, next: any) {
 	// Gather the jwt access token from the request header

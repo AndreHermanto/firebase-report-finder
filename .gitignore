@@ -66,5 +66,4 @@ node_modules/
 
 functions/lib/
 functions/node_modules/
-functions/src/nonTS/reports/
-functions/src/nonTS/singleton-app.pem
+functions/src/nonTS/keys

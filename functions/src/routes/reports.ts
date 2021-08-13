@@ -1,9 +1,11 @@
 var express = require('express');
 var router = express.Router();
-var path = require('path');
 import * as jwt from 'jsonwebtoken';
 var fs = require('fs');
-var cert = fs.readFileSync(__dirname + '/../nonTS/singleton-app.pem');
+var cert = fs.readFileSync(__dirname + '/../nonTS/keys/singleton-app.pem');
+import * as admin from 'firebase-admin';
+
+const bucket = admin.storage().bucket();
 
 function authenticateToken(req: any, res: any, next: any) {
 	// Gather the jwt access token from the request header
@@ -31,8 +33,12 @@ function authenticateToken(req: any, res: any, next: any) {
  * 
  */
 router.get('/:report', authenticateToken, function(req: any, res: any, next: any) {
-    var staticFilesPath = path.join(__dirname, '../nonTS/reports')
-    res.sendFile(`${staticFilesPath}/${req.params.report}.report.html`)
+		const readStream = bucket.file(`${req.params.report}.report.html`).createReadStream().on('error', function(err: NodeJS.ErrnoException) {
+			res.sendStatus(err.code);
+		});
+		readStream.pipe(res).on('error', function(err: NodeJS.ErrnoException) {
+			res.sendStatus(err.code);
+		});
 });
 
 module.exports = router;
