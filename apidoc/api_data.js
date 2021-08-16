@@ -102,6 +102,13 @@ define({ "api": [
             "group": "Parameter",
             "type": "String",
             "optional": false,
+            "field": "id",
+            "description": "<p>Sample ids. Separated by comma if there's multiple.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
             "field": "first_name",
             "description": "<p>Sample first name.</p>"
           },
