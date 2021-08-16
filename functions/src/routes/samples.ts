@@ -50,7 +50,7 @@ router.post('/', authenticateToken, function(req: any, res: any, next: any) {
       });
     res.send(demoModule.demo.filter((s:any) => {
         if(id !== ''){
-            return arrIds.includes(s.id);
+            return arrIds.map((e:string) => e.toUpperCase()).includes(s.id.toUpperCase());
         }else{
             let flag = false;
             if(

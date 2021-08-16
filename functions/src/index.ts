@@ -65,7 +65,7 @@ main.use(bodyParser.urlencoded({extended: false}));
 
 export const reportFinder=functions
                             .runWith({
-                              timeoutSeconds: 10,
+                              timeoutSeconds: 20,
                               memory: '128MB',
                               maxInstances: 3
                             })

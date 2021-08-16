@@ -25,7 +25,7 @@ var FAKE_DEMO_DATA = [{"id":"AAATW","first_name":"Andre","last_name":"Hermanto",
     "gender": "",
     "dob": "",
     "familyId": "AAAAB",
-    "relationship": "proband"
+    "relationship": ""
 },
 {
     "id": "AAAAC",
@@ -34,7 +34,7 @@ var FAKE_DEMO_DATA = [{"id":"AAATW","first_name":"Andre","last_name":"Hermanto",
     "gender": "",
     "dob": "",
     "familyId": "AAAAC",
-    "relationship": "proband"
+    "relationship": ""
 },
 {
     "id": "AAAAD",
@@ -43,7 +43,7 @@ var FAKE_DEMO_DATA = [{"id":"AAATW","first_name":"Andre","last_name":"Hermanto",
     "gender": "",
     "dob": "",
     "familyId": "AAAAD",
-    "relationship": "proband"
+    "relationship": ""
 },
 {
     "id": "AAAAE",
@@ -52,7 +52,7 @@ var FAKE_DEMO_DATA = [{"id":"AAATW","first_name":"Andre","last_name":"Hermanto",
     "gender": "",
     "dob": "",
     "familyId": "AAAAE",
-    "relationship": "proband"
+    "relationship": ""
 },
 {
     "id": "AAAAF",
@@ -61,7 +61,7 @@ var FAKE_DEMO_DATA = [{"id":"AAATW","first_name":"Andre","last_name":"Hermanto",
     "gender": "",
     "dob": "",
     "familyId": "AAAAF",
-    "relationship": "proband"
+    "relationship": ""
 },
 {
     "id": "AAAAG",
@@ -70,7 +70,7 @@ var FAKE_DEMO_DATA = [{"id":"AAATW","first_name":"Andre","last_name":"Hermanto",
     "gender": "",
     "dob": "",
     "familyId": "AAAAG",
-    "relationship": "proband"
+    "relationship": ""
 },
 {
     "id": "AAAAH",
@@ -79,7 +79,7 @@ var FAKE_DEMO_DATA = [{"id":"AAATW","first_name":"Andre","last_name":"Hermanto",
     "gender": "",
     "dob": "",
     "familyId": "AAAAH",
-    "relationship": "proband"
+    "relationship": ""
 },
 {
     "id": "AAAAI",
@@ -88,7 +88,7 @@ var FAKE_DEMO_DATA = [{"id":"AAATW","first_name":"Andre","last_name":"Hermanto",
     "gender": "",
     "dob": "",
     "familyId": "AAAAI",
-    "relationship": "proband"
+    "relationship": ""
 },
 {
     "id": "AAAAJ",
@@ -97,7 +97,7 @@ var FAKE_DEMO_DATA = [{"id":"AAATW","first_name":"Andre","last_name":"Hermanto",
     "gender": "",
     "dob": "",
     "familyId": "AAAAJ",
-    "relationship": "proband"
+    "relationship": ""
 },
 {
     "id": "AAAAK",
@@ -106,7 +106,7 @@ var FAKE_DEMO_DATA = [{"id":"AAATW","first_name":"Andre","last_name":"Hermanto",
     "gender": "",
     "dob": "",
     "familyId": "AAAAK",
-    "relationship": "proband"
+    "relationship": ""
 },
 {
     "id": "AAAAL",
@@ -115,7 +115,7 @@ var FAKE_DEMO_DATA = [{"id":"AAATW","first_name":"Andre","last_name":"Hermanto",
     "gender": "",
     "dob": "",
     "familyId": "AAAAL",
-    "relationship": "proband"
+    "relationship": ""
 },
 {
     "id": "AAAAM",
@@ -124,7 +124,7 @@ var FAKE_DEMO_DATA = [{"id":"AAATW","first_name":"Andre","last_name":"Hermanto",
     "gender": "",
     "dob": "",
     "familyId": "AAAAM",
-    "relationship": "proband"
+    "relationship": ""
 },
 {
     "id": "AAAAN",
@@ -133,7 +133,7 @@ var FAKE_DEMO_DATA = [{"id":"AAATW","first_name":"Andre","last_name":"Hermanto",
     "gender": "",
     "dob": "",
     "familyId": "AAAAN",
-    "relationship": "proband"
+    "relationship": ""
 },
 {
     "id": "AAAAO",
@@ -142,7 +142,7 @@ var FAKE_DEMO_DATA = [{"id":"AAATW","first_name":"Andre","last_name":"Hermanto",
     "gender": "",
     "dob": "",
     "familyId": "AAAAO",
-    "relationship": "proband"
+    "relationship": ""
 },
 {
     "id": "AAAAP",
@@ -151,7 +151,7 @@ var FAKE_DEMO_DATA = [{"id":"AAATW","first_name":"Andre","last_name":"Hermanto",
     "gender": "",
     "dob": "",
     "familyId": "AAAAP",
-    "relationship": "proband"
+    "relationship": ""
 },
 {
     "id": "AAAAQ",
@@ -160,7 +160,7 @@ var FAKE_DEMO_DATA = [{"id":"AAATW","first_name":"Andre","last_name":"Hermanto",
     "gender": "",
     "dob": "",
     "familyId": "AAAAQ",
-    "relationship": "proband"
+    "relationship": ""
 },
 {
     "id": "AAAAR",
@@ -169,7 +169,7 @@ var FAKE_DEMO_DATA = [{"id":"AAATW","first_name":"Andre","last_name":"Hermanto",
     "gender": "",
     "dob": "",
     "familyId": "AAAAR",
-    "relationship": "proband"
+    "relationship": ""
 },
 {
     "id": "AAAAS",
@@ -178,7 +178,7 @@ var FAKE_DEMO_DATA = [{"id":"AAATW","first_name":"Andre","last_name":"Hermanto",
     "gender": "",
     "dob": "",
     "familyId": "AAAAS",
-    "relationship": "proband"
+    "relationship": ""
 },
 {
     "id": "AAAAT",
@@ -187,7 +187,7 @@ var FAKE_DEMO_DATA = [{"id":"AAATW","first_name":"Andre","last_name":"Hermanto",
     "gender": "",
     "dob": "",
     "familyId": "AAAAT",
-    "relationship": "proband"
+    "relationship": ""
 },
 {
     "id": "AAAAU",
@@ -196,7 +196,7 @@ var FAKE_DEMO_DATA = [{"id":"AAATW","first_name":"Andre","last_name":"Hermanto",
     "gender": "",
     "dob": "",
     "familyId": "AAAAU",
-    "relationship": "proband"
+    "relationship": ""
 },
 {
     "id": "AAAAV",
@@ -205,7 +205,7 @@ var FAKE_DEMO_DATA = [{"id":"AAATW","first_name":"Andre","last_name":"Hermanto",
     "gender": "",
     "dob": "",
     "familyId": "AAAAV",
-    "relationship": "proband"
+    "relationship": ""
 },
 {
     "id": "AAAAW",
@@ -214,7 +214,7 @@ var FAKE_DEMO_DATA = [{"id":"AAATW","first_name":"Andre","last_name":"Hermanto",
     "gender": "",
     "dob": "",
     "familyId": "AAAAW",
-    "relationship": "proband"
+    "relationship": ""
 },
 {
     "id": "AAAAX",
@@ -223,7 +223,7 @@ var FAKE_DEMO_DATA = [{"id":"AAATW","first_name":"Andre","last_name":"Hermanto",
     "gender": "",
     "dob": "",
     "familyId": "AAAAX",
-    "relationship": "proband"
+    "relationship": ""
 },
 {
     "id": "AAAAY",
@@ -232,7 +232,7 @@ var FAKE_DEMO_DATA = [{"id":"AAATW","first_name":"Andre","last_name":"Hermanto",
     "gender": "",
     "dob": "",
     "familyId": "AAAAY",
-    "relationship": "proband"
+    "relationship": ""
 },
 {
     "id": "AAAAZ",
@@ -241,7 +241,7 @@ var FAKE_DEMO_DATA = [{"id":"AAATW","first_name":"Andre","last_name":"Hermanto",
     "gender": "",
     "dob": "",
     "familyId": "AAAAZ",
-    "relationship": "proband"
+    "relationship": ""
 },
 {
     "id": "AAABA",
@@ -250,7 +250,7 @@ var FAKE_DEMO_DATA = [{"id":"AAATW","first_name":"Andre","last_name":"Hermanto",
     "gender": "",
     "dob": "",
     "familyId": "AAABA",
-    "relationship": "proband"
+    "relationship": ""
 },
 {
     "id": "AAABB",
@@ -259,7 +259,7 @@ var FAKE_DEMO_DATA = [{"id":"AAATW","first_name":"Andre","last_name":"Hermanto",
     "gender": "",
     "dob": "",
     "familyId": "AAABB",
-    "relationship": "proband"
+    "relationship": ""
 },
 {
     "id": "AAABC",
@@ -268,7 +268,7 @@ var FAKE_DEMO_DATA = [{"id":"AAATW","first_name":"Andre","last_name":"Hermanto",
     "gender": "",
     "dob": "",
     "familyId": "AAABC",
-    "relationship": "proband"
+    "relationship": ""
 },
 {
     "id": "AAABD",
@@ -277,7 +277,7 @@ var FAKE_DEMO_DATA = [{"id":"AAATW","first_name":"Andre","last_name":"Hermanto",
     "gender": "",
     "dob": "",
     "familyId": "AAABD",
-    "relationship": "proband"
+    "relationship": ""
 },
 {
     "id": "AAABE",
@@ -286,7 +286,7 @@ var FAKE_DEMO_DATA = [{"id":"AAATW","first_name":"Andre","last_name":"Hermanto",
     "gender": "",
     "dob": "",
     "familyId": "AAABE",
-    "relationship": "proband"
+    "relationship": ""
 },
 {
     "id": "AAABF",
@@ -295,7 +295,7 @@ var FAKE_DEMO_DATA = [{"id":"AAATW","first_name":"Andre","last_name":"Hermanto",
     "gender": "",
     "dob": "",
     "familyId": "AAABF",
-    "relationship": "proband"
+    "relationship": ""
 },
 {
     "id": "AAABG",
@@ -304,7 +304,7 @@ var FAKE_DEMO_DATA = [{"id":"AAATW","first_name":"Andre","last_name":"Hermanto",
     "gender": "",
     "dob": "",
     "familyId": "AAABG",
-    "relationship": "proband"
+    "relationship": ""
 },
 {
     "id": "AAABH",
@@ -313,7 +313,7 @@ var FAKE_DEMO_DATA = [{"id":"AAATW","first_name":"Andre","last_name":"Hermanto",
     "gender": "",
     "dob": "",
     "familyId": "AAABH",
-    "relationship": "proband"
+    "relationship": ""
 },
 {
     "id": "AAABI",
@@ -322,7 +322,7 @@ var FAKE_DEMO_DATA = [{"id":"AAATW","first_name":"Andre","last_name":"Hermanto",
     "gender": "",
     "dob": "",
     "familyId": "AAABI",
-    "relationship": "proband"
+    "relationship": ""
 },
 {
     "id": "AAABJ",
@@ -331,7 +331,7 @@ var FAKE_DEMO_DATA = [{"id":"AAATW","first_name":"Andre","last_name":"Hermanto",
     "gender": "",
     "dob": "",
     "familyId": "AAABJ",
-    "relationship": "proband"
+    "relationship": ""
 },
 {
     "id": "AAABK",
@@ -340,7 +340,7 @@ var FAKE_DEMO_DATA = [{"id":"AAATW","first_name":"Andre","last_name":"Hermanto",
     "gender": "",
     "dob": "",
     "familyId": "AAABK",
-    "relationship": "proband"
+    "relationship": ""
 },
 {
     "id": "AAABL",
@@ -349,7 +349,7 @@ var FAKE_DEMO_DATA = [{"id":"AAATW","first_name":"Andre","last_name":"Hermanto",
     "gender": "",
     "dob": "",
     "familyId": "AAABL",
-    "relationship": "proband"
+    "relationship": ""
 },
 {
     "id": "AAABM",
@@ -358,7 +358,7 @@ var FAKE_DEMO_DATA = [{"id":"AAATW","first_name":"Andre","last_name":"Hermanto",
     "gender": "",
     "dob": "",
     "familyId": "AAABM",
-    "relationship": "proband"
+    "relationship": ""
 },
 {
     "id": "AAABN",
@@ -367,7 +367,7 @@ var FAKE_DEMO_DATA = [{"id":"AAATW","first_name":"Andre","last_name":"Hermanto",
     "gender": "",
     "dob": "",
     "familyId": "AAABN",
-    "relationship": "proband"
+    "relationship": ""
 },
 {
     "id": "AAABO",
@@ -376,7 +376,7 @@ var FAKE_DEMO_DATA = [{"id":"AAATW","first_name":"Andre","last_name":"Hermanto",
     "gender": "",
     "dob": "",
     "familyId": "AAABO",
-    "relationship": "proband"
+    "relationship": ""
 },
 {
     "id": "AAABP",
@@ -385,7 +385,7 @@ var FAKE_DEMO_DATA = [{"id":"AAATW","first_name":"Andre","last_name":"Hermanto",
     "gender": "",
     "dob": "",
     "familyId": "AAABP",
-    "relationship": "proband"
+    "relationship": ""
 },
 {
     "id": "AAABQ",
@@ -394,7 +394,7 @@ var FAKE_DEMO_DATA = [{"id":"AAATW","first_name":"Andre","last_name":"Hermanto",
     "gender": "",
     "dob": "",
     "familyId": "AAABQ",
-    "relationship": "proband"
+    "relationship": ""
 },
 {
     "id": "AAABR",
@@ -403,7 +403,7 @@ var FAKE_DEMO_DATA = [{"id":"AAATW","first_name":"Andre","last_name":"Hermanto",
     "gender": "",
     "dob": "",
     "familyId": "AAABR",
-    "relationship": "proband"
+    "relationship": ""
 },
 {
     "id": "AAABS",
@@ -412,7 +412,7 @@ var FAKE_DEMO_DATA = [{"id":"AAATW","first_name":"Andre","last_name":"Hermanto",
     "gender": "",
     "dob": "",
     "familyId": "AAABS",
-    "relationship": "proband"
+    "relationship": ""
 },
 {
     "id": "AAABT",
@@ -421,7 +421,7 @@ var FAKE_DEMO_DATA = [{"id":"AAATW","first_name":"Andre","last_name":"Hermanto",
     "gender": "",
     "dob": "",
     "familyId": "AAABT",
-    "relationship": "proband"
+    "relationship": ""
 },
 {
     "id": "AAABU",
@@ -430,7 +430,7 @@ var FAKE_DEMO_DATA = [{"id":"AAATW","first_name":"Andre","last_name":"Hermanto",
     "gender": "",
     "dob": "",
     "familyId": "AAABU",
-    "relationship": "proband"
+    "relationship": ""
 },
 {
     "id": "AAABV",
@@ -439,7 +439,7 @@ var FAKE_DEMO_DATA = [{"id":"AAATW","first_name":"Andre","last_name":"Hermanto",
     "gender": "",
     "dob": "",
     "familyId": "AAABV",
-    "relationship": "proband"
+    "relationship": ""
 },
 {
     "id": "AAABW",
@@ -448,7 +448,7 @@ var FAKE_DEMO_DATA = [{"id":"AAATW","first_name":"Andre","last_name":"Hermanto",
     "gender": "",
     "dob": "",
     "familyId": "AAABW",
-    "relationship": "proband"
+    "relationship": ""
 }]
 
 exports.demo = FAKE_DEMO_DATA;
