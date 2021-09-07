@@ -7,7 +7,7 @@ const serviceAccount = require('./nonTS/keys/key.json');
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
-  storageBucket: 'pharmcat-report-finder.appspot.com'
+  storageBucket: 'report-finder-325309.appspot.com'
 });
 
 var createError = require('http-errors');

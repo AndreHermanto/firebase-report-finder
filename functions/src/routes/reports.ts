@@ -33,7 +33,7 @@ function authenticateToken(req: any, res: any, next: any) {
  * 
  */
 router.get('/:report', authenticateToken, function(req: any, res: any, next: any) {
-		const readStream = bucket.file(`${req.params.report}.report.html`).createReadStream().on('error', function(err: NodeJS.ErrnoException) {
+		const readStream = bucket.file(`pharmcat/mgrb/${req.params.report}.report.html`).createReadStream().on('error', function(err: NodeJS.ErrnoException) {
 			res.sendStatus(err.code);
 		});
 		readStream.pipe(res).on('error', function(err: NodeJS.ErrnoException) {
