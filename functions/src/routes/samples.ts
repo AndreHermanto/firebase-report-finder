@@ -29,7 +29,6 @@ function authenticateToken(req: any, res: any, next: any) {
  * 
  * @apiHeader (Header) {String} Authorization Authorization value.
  *
- * @apiParam {String} id Sample ids. Separated by comma if there's multiple.
  * @apiParam {String} first_name Sample first name.
  * @apiParam {String} last_name Sample last name.
  * @apiParam {String} dob Sample date of birth(ex. '30/12/2000').
@@ -39,31 +38,52 @@ function authenticateToken(req: any, res: any, next: any) {
  * 
  */
 router.post('/', authenticateToken, function(req: any, res: any, next: any) {
-    const id = req.body.id;
     const first_name = req.body.first_name;
     const last_name = req.body.last_name;
     const dob = req.body.dob;
+    const report = req.body.report;
+
+    res.send(demoModule.demo.filter((s:any) => {
+        let flag = false;
+        if(
+            (first_name ==='' || s.first_name.toLowerCase().includes(first_name.toLowerCase())) 
+                && (last_name ==='' || s.last_name.toLowerCase().includes(last_name.toLowerCase()))
+                && (dob ==='' || dob === s.dob)
+                && (availableReports.MAPPING_AVAILABLE_REPORTS[report].includes(s.id))
+            ){
+                flag = true;
+              }
+          return flag;
+      }))
+});
+
+/**
+ * @api {post} /samples/byIds Request Samples
+ * @apiName GetSamplesByIds
+ * @apiGroup Samples
+ * @apiError NotFound The <code>404</code> of the Report was not found.
+ * @apiError Forbidden The <code>403</code> of the token was not valid.
+ * 
+ * @apiHeader (Header) {String} Authorization Authorization value.
+ *
+ * @apiParam {String} id Sample ids. Separated by comma if there's multiple.
+ * @apiParam {String} report Report type.
+ *
+ * @apiSuccess {HTML} HTML HTML report
+ * 
+ */
+router.post('/by-ids', authenticateToken, function(req: any, res: any, next: any) {
+    const id = req.body.id;
     const report = req.body.report;
 
     const arrIds = id.split(",").map(function(item:string) {
         return item.trim();
       });
     res.send(demoModule.demo.filter((s:any) => {
-        if(id !== ''){
-            return arrIds.map((e:string) => e.toUpperCase()).includes(s.id.toUpperCase());
-        }else{
-            let flag = false;
-            if(
-                (first_name ==='' || s.first_name.toLowerCase().includes(first_name.toLowerCase())) 
-                    && (last_name ==='' || s.last_name.toLowerCase().includes(last_name.toLowerCase()))
-                    && (dob ==='' || dob === s.dob)
-                    && (availableReports.MAPPING_AVAILABLE_REPORTS[report].includes(s.id))
-                ){
-                    flag = true;
-                  }
-              return flag;
-        }
-      }))
+        return (arrIds.map((e:string) => e.toUpperCase()).includes(s.id.toUpperCase()) && availableReports.MAPPING_AVAILABLE_REPORTS[report].includes(s.id));
+      }).map(((e:any) => {
+        return {id: e.id};
+    })))
 });
 
 /**
