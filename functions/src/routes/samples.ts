@@ -1,17 +1,17 @@
-var demoModule = require('./mockdata')
-var express = require('express');
-var availableReports = require('./data/available-reports')
-var router = express.Router();
+const demoModule = require('./mockdata')
+const express = require('express');
+const availableReports = require('./data/available-reports')
+const router = express.Router();
 import * as jwt from 'jsonwebtoken';
-var fs = require('fs');
+const fs = require('fs');
 
-var cert = fs.readFileSync(__dirname + '/../nonTS/keys/singleton-app.pem');
+const cert = fs.readFileSync(__dirname + '/../nonTS/keys/singleton-app.pem');
 
 function authenticateToken(req: any, res: any, next: any) {
 	// Gather the jwt access token from the request header
 	const authHeader = req.headers['authorization']
 	const token = authHeader && authHeader.split(' ')[1]
-    if (token == null) return res.sendStatus(401) // if there isn't any token
+    if (token === null) return res.sendStatus(401) // if there isn't any token
 
 	jwt.verify(token.toString(), cert, (err: any, user: any) => {
 	  if (err) return res.sendStatus(403)

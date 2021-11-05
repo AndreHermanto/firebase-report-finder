@@ -1,7 +1,6 @@
 import * as functions from 'firebase-functions';
 import * as admin from 'firebase-admin';
 import * as express from 'express';
-import * as bodyParser from 'body-parser';
 
 const serviceAccount = require('./nonTS/keys/key.json');
 
@@ -10,21 +9,21 @@ admin.initializeApp({
   storageBucket: 'report-finder-325309.appspot.com'
 });
 
-var createError = require('http-errors');
+const createError = require('http-errors');
 
-var reportsRouter = require('./routes/reports');
-var samplesRouter = require('./routes/samples');
-var cors = require('cors');
-var path = require('path');
+const reportsRouter = require('./routes/reports');
+const samplesRouter = require('./routes/samples');
+const cors = require('cors');
+const path = require('path');
 
 const app=express();
 const main=express();
 
-var whitelist = ['http://localhost:3000',
-                  'https://pharmcat-report-finder.web.app'
+const whitelist = ['http://localhost:3000',
+                  'https://report-finder-325309.web.app'
               ]
 
-var corsOptions = {
+const corsOptions = {
   origin: function (origin:any, callback:any) {
     if (typeof origin === 'undefined' || whitelist.indexOf(origin) !== -1) {
       callback(null, true)
@@ -60,13 +59,12 @@ app.use(function(err: any, req: any, res: any, next: any) {
 });
 
 main.use('/',app);
-main.use(bodyParser.json());
-main.use(bodyParser.urlencoded({extended: false}));
+main.use(express.json());
+main.use(express.urlencoded({extended: true}));
 
 export const reportFinder=functions
                             .runWith({
                               timeoutSeconds: 20,
                               memory: '128MB',
                               maxInstances: 3
-                            })
-                            .region('australia-southeast1').https.onRequest(main);
+                            }).https.onRequest(main);

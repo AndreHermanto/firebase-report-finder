@@ -1,4 +1,4 @@
-var FAKE_DEMO_DATA = [{"id":"AAATW","first_name":"Andre","last_name":"Hermanto","gender":"male","dob":"14/6/1993","medicare_no":"9656032497","medicare_ref":4, "familyId":'1', 'relationship': 'proband'},
+const FAKE_DEMO_DATA = [{"id":"AAATW","first_name":"Andre","last_name":"Hermanto","gender":"male","dob":"14/6/1993","medicare_no":"9656032497","medicare_ref":4, "familyId":'1', 'relationship': 'proband'},
 {"id":"AAAAA","first_name":"Warren","last_name":"Kaplan","gender":"male","dob":"1/3/1971","medicare_no":"5598096609","medicare_ref":2, "familyId":'2', 'relationship': 'proband'},
 {"id":"A","first_name":"Andre","last_name":"Camilleri","gender":"female","dob":"24/10/1980","medicare_no":"7057954026","medicare_ref":3, "familyId":'3', 'relationship': 'proband'},
 {"id":"B","first_name":"Xever","last_name":"Belson","gender":"male","dob":"12/1/1992","medicare_no":"8899466858","medicare_ref":3, "familyId":'4', 'relationship': 'proband'},

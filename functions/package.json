@@ -12,7 +12,7 @@
     "logs": "firebase functions:log"
   },
   "engines": {
-    "node": "10"
+    "node": "14"
   },
   "main": "lib/index.js",
   "dependencies": {
@@ -23,7 +23,8 @@
     "firebase-functions": "^3.3.0",
     "http-errors": "~1.6.3",
     "jsonwebtoken": "^8.5.1",
-    "pug": "^3.0.2"
+    "pug": "^3.0.2",
+    "request": "^2.88.2"
   },
   "devDependencies": {
     "@types/jsonwebtoken": "^8.5.4",
